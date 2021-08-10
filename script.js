@@ -38,3 +38,13 @@
 //         '\nKm: '+(distancia/1000)+' Quilômetros'+'         Dm: '+(distancia*10)+' Decimetros'+
 //         '\nHm: '+(distancia/100)+' Hectômetros'+'         Cm: '+(distancia*100)+' Centimetros'+
 //         '\nDam: '+(distancia/10)+' Decâmetros'+'         Mm: '+(distancia*1000)+' Milimetro');
+
+// Exercise nine
+
+// let dinheiro = prompt('Digite a quantia em real:(Exemplo: R$5.00)');
+// alert('Você possui R$'+dinheiro+'\nEm dollar: $'+((dinheiro/3.45).toFixed(2)));
+
+// Exercise ten 
+let largura = prompt('Digite o valor da largura');
+let altura = prompt('Digite o valor da altura');
+alert('Área a ser pintada: '+(largura*altura)+'m²'+'\nQuantidade em litros de tinta para cada 2m²: '+(largura*altura)/2);
