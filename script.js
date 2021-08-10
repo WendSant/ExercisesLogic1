@@ -33,3 +33,8 @@
 
 // Exercise eigth
 
+// let distancia = prompt('Digite a distância:');
+// alert('A distância de '+distancia+' corresponde a: '+
+//         '\nKm: '+(distancia/1000)+' Quilômetros'+'         Dm: '+(distancia*10)+' Decimetros'+
+//         '\nHm: '+(distancia/100)+' Hectômetros'+'         Cm: '+(distancia*100)+' Centimetros'+
+//         '\nDam: '+(distancia/10)+' Decâmetros'+'         Mm: '+(distancia*1000)+' Milimetro');
