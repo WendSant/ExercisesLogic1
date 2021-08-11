@@ -44,7 +44,19 @@
 // let dinheiro = prompt('Digite a quantia em real:(Exemplo: R$5.00)');
 // alert('Você possui R$'+dinheiro+'\nEm dollar: $'+((dinheiro/3.45).toFixed(2)));
 
-// Exercise ten 
-let largura = prompt('Digite o valor da largura');
-let altura = prompt('Digite o valor da altura');
-alert('Área a ser pintada: '+(largura*altura)+'m²'+'\nQuantidade em litros de tinta para cada 2m²: '+(largura*altura)/2);
+// Exercise ten
+// let largura = prompt('Digite o valor da largura');
+// let altura = prompt('Digite o valor da altura');
+// alert('Área a ser pintada: '+(largura*altura)+'m²'+'\nQuantidade em litros de tinta para cada 2m²: '+(largura*altura)/2);
+
+// Exercise eleven
+
+// let a = parseInt(prompt("Digite o valor de a"));
+// let b = parseInt(prompt("Digite o valor de b"));
+// let c = parseInt(prompt("Digite o valor de c"));
+
+// alert('O valor de delta é: '+(b*b-4*2*c));
+
+
+
+
