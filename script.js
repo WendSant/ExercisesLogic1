@@ -59,9 +59,15 @@
 
 
 // Exercise twelve
-let preco = prompt('Digite o valor do produto :');
-let porcentagem = prompt('Porcentagem');
-alert('O valor do produto com '+porcentagem+'% de desconto '+(preco-((porcentagem/100)*preco)));
+// let preco = prompt('Digite o valor do produto :');
+// let porcentagem = prompt('Porcentagem');
+// alert('O valor do produto com '+porcentagem+'% de desconto '+(preco-((porcentagem/100)*preco)));
+
+// Exercise thirteen
+let salario = parseFloat(prompt('Digite seu salário :'));
+// alert('Seu antigo salário é: R$'+salario+'\nSeu novo salário com 15% de aumento é '+(salario+(0.15*salario)));
+
+alert('Seu antigo salário é: R$'+salario+'\nSeu novo salário com 15% de aumento é '+(salario+(0.15*salario)));
 
 
 
