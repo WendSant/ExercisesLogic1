@@ -58,5 +58,10 @@
 // alert('O valor de delta é: '+(b*b-4*2*c));
 
 
+// Exercise twelve
+let preco = prompt('Digite o valor do produto :');
+let porcentagem = prompt('Porcentagem');
+alert('O valor do produto com '+porcentagem+'% de desconto '+(preco-((porcentagem/100)*preco)));
+
 
 
