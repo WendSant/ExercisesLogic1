@@ -64,10 +64,16 @@
 // alert('O valor do produto com '+porcentagem+'% de desconto '+(preco-((porcentagem/100)*preco)));
 
 // Exercise thirteen
-let salario = parseFloat(prompt('Digite seu salário :'));
-// alert('Seu antigo salário é: R$'+salario+'\nSeu novo salário com 15% de aumento é '+(salario+(0.15*salario)));
+// let salario = parseFloat(prompt('Digite seu salário :'));
+// alert('Seu antigo salário é: R$'+salario+'\nSeu novo salário com 15% de aumento é R$'+(salario+(0.15*salario)));
 
-alert('Seu antigo salário é: R$'+salario+'\nSeu novo salário com 15% de aumento é '+(salario+(0.15*salario)));
+// Exercise fourteen
+
+// let km = parseFloat(prompt("Digite a quantidade de quilometros percorridos(Utilize ' . ' no lugar de ' , ')"));
+// let dias = parseFloat(prompt("Quantos dias ficou com o carro?(Utilize ' . ' no lugar de ' , ')"));
+// alert('Preço a pagar por quilometros pecorridos: R$'+(km*0.20).toFixed(2)+
+//       '\nPreço a pagar por dias com o carro: R$'+(dias*90)+
+//       '\nValor total a pagar: R$'+(dias*90+km*0.20).toFixed(2));
 
 
 
