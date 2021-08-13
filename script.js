@@ -87,3 +87,10 @@
 // Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.
 // let dias = parseInt(prompt('Quantos dias você trabalhou no mês?'));
 // alert('Seu salário este mês é: R$'+((dias*8)*25));
+
+// Exercise sixteen
+// Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias.
+// let cigarrosDias = parseInt(prompt('Quantidade de cigarros fumado por dia: '));
+// let anosFumou = parseFloat(prompt('Quantos anos fumou?'));
+// alert('Você fumou : '+(cigarrosDias*(anosFumou*365))+' cigarros por dia durante o periodo informado'+
+//       '\nVocê perdeu : '+(((cigarrosDias*(anosFumou*365)))*10/1440).toFixed(0)+' dias de vida');
