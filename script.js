@@ -93,4 +93,13 @@
 // let cigarrosDias = parseInt(prompt('Quantidade de cigarros fumado por dia: '));
 // let anosFumou = parseFloat(prompt('Quantos anos fumou?'));
 // alert('Você fumou : '+(cigarrosDias*(anosFumou*365))+' cigarros por dia durante o periodo informado'+
-//       '\nVocê perdeu : '+(((cigarrosDias*(anosFumou*365)))*10/1440).toFixed(0)+' dias de vida');
+//       '\nVocê perdeu : '+(((cigarrosDias*(anosFumou*365)))*10/1440).toFixed(0)+' dias de vida'); 
+
+// Exercise seventeen
+let velocidade = parseFloat(prompt('Qual a velocidade do carro?(O valor será convertido em km/h)'));
+
+if(velocidade > 80) {
+    alert('Você ultrapassou o limite de velocidade. \nVocê foi multado em: R$'+((velocidade-80)*5).toFixed(2)+'')
+}else{
+    alert('Parabéns, você esta abaixo do limite de velocidade');
+}
