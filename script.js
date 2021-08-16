@@ -96,10 +96,21 @@
 //       '\nVocê perdeu : '+(((cigarrosDias*(anosFumou*365)))*10/1440).toFixed(0)+' dias de vida'); 
 
 // Exercise seventeen
-let velocidade = parseFloat(prompt('Qual a velocidade do carro?(O valor será convertido em km/h)'));
+// let velocidade = parseFloat(prompt('Qual a velocidade do carro?(O valor será convertido em km/h)'));
 
-if(velocidade > 80) {
-    alert('Você ultrapassou o limite de velocidade. \nVocê foi multado em: R$'+((velocidade-80)*5).toFixed(2)+'')
-}else{
-    alert('Parabéns, você esta abaixo do limite de velocidade');
+// if(velocidade > 80) {
+//     alert('Você ultrapassou o limite de velocidade. \nVocê foi multado em: R$'+((velocidade-80)*5).toFixed(2)+'')
+// }else{
+//     alert('Parabéns, você esta abaixo do limite de velocidade');
+// }
+
+// Exercuse eightteen
+
+let  ano = parseInt(prompt('Qual ano você nasceu?'));
+if (2021 - ano >= 18){
+    alert('Você tem '+(2021 - ano)+' anos, idade suficiente para votar');
+    
+}else 
+{
+   alert('Você tem '+(2021 - ano)+' anos, idade insuficiente para votar');
 }
