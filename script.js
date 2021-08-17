@@ -106,11 +106,31 @@
 
 // Exercuse eightteen
 
-let  ano = parseInt(prompt('Qual ano você nasceu?'));
-if (2021 - ano >= 18){
-    alert('Você tem '+(2021 - ano)+' anos, idade suficiente para votar');
+// let  ano = parseInt(prompt('Qual ano você nasceu?'));
+// if (2021 - ano >= 18){
+//     alert('Você tem '+(2021 - ano)+' anos, idade suficiente para votar');
     
-}else 
-{
-   alert('Você tem '+(2021 - ano)+' anos, idade insuficiente para votar');
+// }else 
+// {
+//    alert('Você tem '+(2021 - ano)+' anos, idade insuficiente para votar');
+// }
+
+// Exercise nineteen 
+
+let nome = prompt('Digite seu nome');
+let media = [];
+media[0] = parseFloat(prompt('Digite sua primeira nota '));
+media[1] = parseFloat(prompt('Digite sua segunda nota '));
+let soma = 0;
+for(var i = 0; i < media.length; i++) {
+    soma += media[i];
+}
+
+media = (soma/2).toFixed(1);
+console.log(media);
+
+if (media >=7){
+    alert('Olá '+ nome +' sua média é '+ media +'\nVocê está aprovado');
+}else {
+    alert('Olá '+ nome +' sua média é '+ media +'\nInfelizmente você foi reprovado.');
 }
