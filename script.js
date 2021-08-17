@@ -140,10 +140,21 @@
 // }
 
 // Exercise twenty
+// 20) Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
 
-let numero = parseInt(prompt('Digite um numero inteiro'));
-if (numero % 2 === 0) {
-    alert('O número '+ numero + ' é par.');
+// let numero = parseInt(prompt('Digite um numero inteiro'));
+// if (numero % 2 === 0) {
+//     alert('O número '+ numero + ' é par.');
+// }else {
+//     alert('O número '+ numero + ' é impar.');
+// }
+
+// Exercise twenty one
+// 21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.
+let ano = parseInt(prompt('Digite um ano: '));
+
+if (ano % 4 === 0 && ano % 100 != 0) {
+    alert('O ano de '+ ano + ' é bissexto.');
 }else {
-    alert('O número '+ numero + ' é impar.');
+    alert('O ano de '+ ano + ' não é bissexto.');
 }
