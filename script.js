@@ -96,6 +96,7 @@
 //       '\nVocê perdeu : '+(((cigarrosDias*(anosFumou*365)))*10/1440).toFixed(0)+' dias de vida'); 
 
 // Exercise seventeen
+// 17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 // let velocidade = parseFloat(prompt('Qual a velocidade do carro?(O valor será convertido em km/h)'));
 
 // if(velocidade > 80) {
@@ -105,6 +106,7 @@
 // }
 
 // Exercuse eightteen
+// 18) Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e depois mostre se ela pode ou não votar.
 
 // let  ano = parseInt(prompt('Qual ano você nasceu?'));
 // if (2021 - ano >= 18){
@@ -116,21 +118,32 @@
 // }
 
 // Exercise nineteen 
+// 19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0).
 
-let nome = prompt('Digite seu nome');
-let media = [];
-media[0] = parseFloat(prompt('Digite sua primeira nota '));
-media[1] = parseFloat(prompt('Digite sua segunda nota '));
-let soma = 0;
-for(var i = 0; i < media.length; i++) {
-    soma += media[i];
-}
 
-media = (soma/2).toFixed(1);
-console.log(media);
+// let nome = prompt('Digite seu nome');
+// let media = [];
+// media[0] = parseFloat(prompt('Digite sua primeira nota '));
+// media[1] = parseFloat(prompt('Digite sua segunda nota '));
+// let soma = 0;
+// for(var i = 0; i < media.length; i++) {
+//     soma += media[i];
+// }
 
-if (media >=7){
-    alert('Olá '+ nome +' sua média é '+ media +'\nVocê está aprovado');
+// media = (soma/2).toFixed(1);
+// console.log(media);
+
+// if (media >=7){
+//     alert('Olá '+ nome +' sua média é '+ media +'\nVocê está aprovado');
+// }else {
+//     alert('Olá '+ nome +' sua média é '+ media +'\nInfelizmente você foi reprovado.');
+// }
+
+// Exercise twenty
+
+let numero = parseInt(prompt('Digite um numero inteiro'));
+if (numero % 2 === 0) {
+    alert('O número '+ numero + ' é par.');
 }else {
-    alert('Olá '+ nome +' sua média é '+ media +'\nInfelizmente você foi reprovado.');
+    alert('O número '+ numero + ' é impar.');
 }
