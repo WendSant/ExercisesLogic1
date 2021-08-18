@@ -164,12 +164,34 @@
 //  - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
 //  - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
 
-let anoAtual = parseInt(prompt('Digite o ano em que estamos'));
-let ano = parseInt(prompt('Digite o ano em que nasceu'));
-if (anoAtual - ano == 18){
-    alert('Você está na idade para se alistar este ano');
-}else if(anoAtual - ano > 18) {
-    alert('Já se passaram '+ ((anoAtual - ano)-18) +' anos do seu alistamento' );
-}else {
-    alert('Você ainda não tem idade para se alistar, faltam '+ (18-(anoAtual - ano)) +' anos.');
+// let anoAtual = parseInt(prompt('Digite o ano em que estamos'));
+// let ano = parseInt(prompt('Digite o ano em que nasceu'));
+// if (anoAtual - ano == 18){
+//     alert('Você está na idade para se alistar este ano');
+// }else if(anoAtual - ano > 18) {
+//     alert('Já se passaram '+ ((anoAtual - ano)-18) +' anos do seu alistamento' );
+// }else {
+//     alert('Você ainda não tem idade para se alistar, faltam '+ (18-(anoAtual - ano)) +' anos.');
+// }
+
+// Exercise twenty three
+// 23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
+//  - Homens ganham 5% de desconto
+//  - Mulheres ganham 13% de desconto
+
+let nome = prompt('Digite seu nome');
+let sexo = prompt('Digite seu sexo(M para masculino e F para feminino)');
+let valor = parseFloat(prompt('Digite o valor das compras')).toFixed(2);
+if(sexo === "M" || sexo === "m"){
+    alert('Olá ' + nome + ', seu desconto é de 5%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.05*valor))); 
+}else if (sexo === "F" || sexo === "f"){
+    alert('Olá ' + nome + ', seu desconto é de 15%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.15*valor))); 
+}else{
+    alert('Coloque um sexo valido M ou F, a pagina sera reiniciada');
+    location.reload();
 }
+
+
+
+
+
