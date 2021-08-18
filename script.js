@@ -181,15 +181,19 @@
 
 let nome = prompt('Digite seu nome');
 let sexo = prompt('Digite seu sexo(M para masculino e F para feminino)');
-let valor = parseFloat(prompt('Digite o valor das compras')).toFixed(2);
-if(sexo === "M" || sexo === "m"){
-    alert('Olá ' + nome + ', seu desconto é de 5%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.05*valor))); 
-}else if (sexo === "F" || sexo === "f"){
-    alert('Olá ' + nome + ', seu desconto é de 15%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.15*valor))); 
-}else{
+if(sexo === "M" || sexo === "m" || sexo === 'F' || sexo === 'f'){
+    let valor = parseFloat(prompt('Digite o valor das compras')).toFixed(2);
+    
+    if(sexo === "M" || sexo === "m" ){
+        alert('Olá ' + nome + ', seu desconto é de 5%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.05*valor))); 
+    }else {
+        alert('Olá ' + nome + ', seu desconto é de 15%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.15*valor))); 
+    }
+}else {
     alert('Coloque um sexo valido M ou F, a pagina sera reiniciada');
     location.reload();
 }
+
 
 
 
