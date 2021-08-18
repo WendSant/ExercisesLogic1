@@ -151,10 +151,25 @@
 
 // Exercise twenty one
 // 21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.
-let ano = parseInt(prompt('Digite um ano: '));
+// let ano = parseInt(prompt('Digite um ano: '));
 
-if (ano % 4 === 0 && ano % 100 != 0) {
-    alert('O ano de '+ ano + ' é bissexto.');
+// if (ano % 4 === 0 && ano % 100 != 0) {
+//     alert('O ano de '+ ano + ' é bissexto.');
+// }else {
+//     alert('O ano de '+ ano + ' não é bissexto.');
+// }
+
+// Exercise twenty two
+// 22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
+//  - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+//  - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
+
+let anoAtual = parseInt(prompt('Digite o ano em que estamos'));
+let ano = parseInt(prompt('Digite o ano em que nasceu'));
+if (anoAtual - ano == 18){
+    alert('Você está na idade para se alistar este ano');
+}else if(anoAtual - ano > 18) {
+    alert('Já se passaram '+ ((anoAtual - ano)-18) +' anos do seu alistamento' );
 }else {
-    alert('O ano de '+ ano + ' não é bissexto.');
+    alert('Você ainda não tem idade para se alistar, faltam '+ (18-(anoAtual - ano)) +' anos.');
 }
