@@ -179,20 +179,27 @@
 //  - Homens ganham 5% de desconto
 //  - Mulheres ganham 13% de desconto
 
-let nome = prompt('Digite seu nome');
-let sexo = prompt('Digite seu sexo(M para masculino e F para feminino)');
-if(sexo === "M" || sexo === "m" || sexo === 'F' || sexo === 'f'){
-    let valor = parseFloat(prompt('Digite o valor das compras')).toFixed(2);
+// let nome = prompt('Digite seu nome');
+// let sexo = prompt('Digite seu sexo(M para masculino e F para feminino)');
+// if(sexo === "M" || sexo === "m" || sexo === 'F' || sexo === 'f'){
+//     let valor = parseFloat(prompt('Digite o valor das compras')).toFixed(2);
     
-    if(sexo === "M" || sexo === "m" ){
-        alert('Olá ' + nome + ', seu desconto é de 5%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.05*valor))); 
-    }else {
-        alert('Olá ' + nome + ', seu desconto é de 15%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.15*valor))); 
-    }
-}else {
-    alert('Coloque um sexo valido M ou F, a pagina sera reiniciada');
-    location.reload();
-}
+//     if(sexo === "M" || sexo === "m" ){
+//         alert('Olá ' + nome + ', seu desconto é de 5%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.05*valor))); 
+//     }else {
+//         alert('Olá ' + nome + ', seu desconto é de 15%.\nValor das compras: R$'+ valor +'\nValor com desconto: R$'+ (valor-(0.15*valor))); 
+//     }
+// }else {
+//     alert('Coloque um sexo valido M ou F, a pagina sera reiniciada');
+//     location.reload();
+// }
+
+// Exercise twenty four
+// 24) Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.
+
+let nome = prompt('Digite seu nome:');
+alert('Seja bem vindo '+ nome +', sua viagem será calculada da seguinte forma: Se a viagem for até 200km será 50centavos por KM, ultrapassando 200km será 45 centavos por km');
+
 
 
 
