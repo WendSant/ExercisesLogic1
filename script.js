@@ -198,7 +198,16 @@
 // 24) Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.
 
 let nome = prompt('Digite seu nome:');
+let km = prompt('Digite quantos km deseja pecorrer em sua viagem: ');
 alert('Seja bem vindo '+ nome +', sua viagem será calculada da seguinte forma: Se a viagem for até 200km será 50centavos por KM, ultrapassando 200km será 45 centavos por km');
+if (km > 200){
+
+    alert('Olá '+ nome +' sua viagem deu o total de: \nR$'+ parseFloat((km*0.45).toFixed(2)) );
+
+}else{
+    alert('Olá '+ nome +' sua viagem deu o total de: \nR$'+ parseFloat((km*0.50).toFixed(2)) );
+}
+
 
 
 
