@@ -227,16 +227,32 @@
 //  - O primeiro valor é o maior
 //  - O segundo valor é o maior
 //  - Não existe valor maior, os dois são iguais
-let valor1 = parseFloat(prompt('Digite o primeiro valor'));
-let valor2 = parseFloat(prompt('Digite o segundo valor'));
-if (valor1 > valor2){
+// let valor1 = parseFloat(prompt('Digite o primeiro valor'));
+// let valor2 = parseFloat(prompt('Digite o segundo valor'));
+// if (valor1 > valor2){
 
-    alert('O primeiro valor é maior, '+ valor1);
+//     alert('O primeiro valor é maior, '+ valor1);
 
-}else if(valor2 > valor1){
-    alert('O segundo valor é maior, '+ valor2);
-}else {
-    alert('Os valores são iguais, '+ valor1 + ', '+ valor2);
+// }else if(valor2 > valor1){
+//     alert('O segundo valor é maior, '+ valor2);
+// }else {
+//     alert('Os valores são iguais, '+ valor1 + ' e '+ valor2);
+// }
+
+// Exercise twenty seven 
+// 27) Crie um programa que leia duas notas de um aluno e calcule a sua média, mostrando uma mensagem no final, de acordo com a média atingida:
+//  - Média até 4.9: REPROVADO
+//  - Média entre 5.0 e 6.9: RECUPERAÇÃO
+//  - Média 7.0 ou superior: APROVADO
+let nota1 = parseFloat(prompt('Digite a primeira nota'));
+let nota2 = parseFloat(prompt('Digite a segunda nota'));
+let media = ((nota1+nota2)/2);
+if (media<=4.9){
+    alert('Você está reprovado');
+}else if ((media>=5)&&(media<=6.9)){
+    alert('Você está em recuperação');
+}else{
+    alert('Você está aprovado');
 }
 
 
