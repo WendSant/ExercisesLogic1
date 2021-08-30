@@ -221,9 +221,23 @@
 // }
 
 
+// PASSO 03 - CONDIÇÕES COMPOSTAS
+// Exercise twentysix
+// 26) Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando na tela uma das mensagens abaixo:
+//  - O primeiro valor é o maior
+//  - O segundo valor é o maior
+//  - Não existe valor maior, os dois são iguais
+let valor1 = parseFloat(prompt('Digite o primeiro valor'));
+let valor2 = parseFloat(prompt('Digite o segundo valor'));
+if (valor1 > valor2){
 
+    alert('O primeiro valor é maior, '+ valor1);
 
-
+}else if(valor2 > valor1){
+    alert('O segundo valor é maior, '+ valor2);
+}else {
+    alert('Os valores são iguais, '+ valor1 + ', '+ valor2);
+}
 
 
 
