@@ -262,16 +262,34 @@
 //  - Entre 100m² e 500m² = TERRENO MASTER
 //  - Acima de 500m² = TERRENO VIP
 
-let largura = parseFloat(prompt('Digite a largura'));
-let comprimento = parseFloat(prompt('Digite o comprimento'));
-let area = (largura*comprimento).toFixed(1);
+// let largura = parseFloat(prompt('Digite a largura'));
+// let comprimento = parseFloat(prompt('Digite o comprimento'));
+// let area = (largura*comprimento).toFixed(1);
 
-if(area < 100){
-    alert('Este é um terrono popular com '+ area +'m²');
-}else if((area >= 100)&&(area < 500)){
-    alert('Este é um terreno master com '+area +'m²');
+// if(area < 100){
+//     alert('Este é um terrono popular com '+ area +'m²');
+// }else if((area >= 100)&&(area < 500)){
+//     alert('Este é um terreno master com '+area +'m²');
+// }else {
+//     alert('Este é um terreno vip com '+area +'m²');
+// }
+
+// Exercise twenty nine 
+// 29) Desenvolva um programa que leia o nome de um funcionário, seu salário, quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de acordo com a tabela a seguir:
+//  - Até 3 anos de empresa: aumento de 3%
+//  - entre 3 e 10 anos: aumento de 12.5%
+//  - 10 anos ou mais: aumento de 20%
+
+let nome = prompt('Digite o nome do funcionário');
+let salario = parseFloat(prompt('Digite o salario do funcionário'));
+let anos = parseFloat(prompt('Digite quantos anos trabalhou'));
+
+if (anos < 3){
+    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 3% é de R$'+ ((0.03*salario)+salario).toFixed(2));
+}else if ((anos >= 3)&&(anos < 10)){
+    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 12.5% é de R$'+ ((0.125*salario)+salario).toFixed(2));
 }else {
-    alert('Este é um terreno vip com '+area +'m²');
+    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 20% é de R$'+ ((0.20*salario)+salario).toFixed(2));
 }
 
 
