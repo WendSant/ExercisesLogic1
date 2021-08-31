@@ -244,16 +244,36 @@
 //  - Média até 4.9: REPROVADO
 //  - Média entre 5.0 e 6.9: RECUPERAÇÃO
 //  - Média 7.0 ou superior: APROVADO
-let nota1 = parseFloat(prompt('Digite a primeira nota'));
-let nota2 = parseFloat(prompt('Digite a segunda nota'));
-let media = ((nota1+nota2)/2);
-if (media<=4.9){
-    alert('Você está reprovado');
-}else if ((media>=5)&&(media<=6.9)){
-    alert('Você está em recuperação');
-}else{
-    alert('Você está aprovado');
+// let nota1 = parseFloat(prompt('Digite a primeira nota'));
+// let nota2 = parseFloat(prompt('Digite a segunda nota'));
+// let media = ((nota1+nota2)/2);
+// if (media<=4.9){
+//     alert('Você está reprovado');
+// }else if ((media>=5)&&(media<=6.9)){
+//     alert('Você está em recuperação');
+// }else{
+//     alert('Você está aprovado');
+// }
+
+
+// Exercise twenty eight 
+// 28) Faça um programa que leia a largura e o comprimento de um terreno retangular, calculando e mostrando a sua área em m². O programa também deve mostrar a classificação desse terreno, de acordo com a lista abaixo:
+//  - Abaixo de 100m² = TERRENO POPULAR
+//  - Entre 100m² e 500m² = TERRENO MASTER
+//  - Acima de 500m² = TERRENO VIP
+
+let largura = parseFloat(prompt('Digite a largura'));
+let comprimento = parseFloat(prompt('Digite o comprimento'));
+let area = (largura*comprimento).toFixed(1);
+
+if(area < 100){
+    alert('Este é um terrono popular com '+ area +'m²');
+}else if((area >= 100)&&(area < 500)){
+    alert('Este é um terreno master com '+area +'m²');
+}else {
+    alert('Este é um terreno vip com '+area +'m²');
 }
+
 
 
 
