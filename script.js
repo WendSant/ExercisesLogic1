@@ -280,18 +280,42 @@
 //  - entre 3 e 10 anos: aumento de 12.5%
 //  - 10 anos ou mais: aumento de 20%
 
-let nome = prompt('Digite o nome do funcionário');
-let salario = parseFloat(prompt('Digite o salario do funcionário'));
-let anos = parseFloat(prompt('Digite quantos anos trabalhou'));
+// let nome = prompt('Digite o nome do funcionário');
+// let salario = parseFloat(prompt('Digite o salario do funcionário'));
+// let anos = parseFloat(prompt('Digite quantos anos trabalhou'));
 
-if (anos < 3){
-    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 3% é de R$'+ ((0.03*salario)+salario).toFixed(2));
-}else if ((anos >= 3)&&(anos < 10)){
-    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 12.5% é de R$'+ ((0.125*salario)+salario).toFixed(2));
-}else {
-    alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 20% é de R$'+ ((0.20*salario)+salario).toFixed(2));
+// if (anos < 3){
+//     alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 3% é de R$'+ ((0.03*salario)+salario).toFixed(2));
+// }else if ((anos >= 3)&&(anos < 10)){
+//     alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 12.5% é de R$'+ ((0.125*salario)+salario).toFixed(2));
+// }else {
+//     alert('Olá '+ nome +', seu antigo salário era de R$'+ salario.toFixed(2) +'\nSeu novo salário com a soma de 20% é de R$'+ ((0.20*salario)+salario).toFixed(2));
+// }
+
+// Exercise thirty
+// 30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo de triângulo será formado:
+//  - EQUILÁTERO: todos os lados iguais
+//  - ISÓSCELES: dois lados iguais
+//  - ESCALENO: todos os lados diferentes
+
+let sideOne = parseFloat(prompt('Digite o valor do primeiro seguimento'));
+let sideTwo = parseFloat(prompt('Digite o valor do segundo seguimento'));
+let sideThree = parseFloat(prompt('Digite o valor do terceiro seguimento'));
+
+if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne === sideTwo)&&(sideThree === sideTwo)&&(sideOne === sideThree)){
+alert('Os seguimentos podem formar um triângulo equilátero');
+
+}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne === sideTwo)&&(sideThree === sideTwo)&&(sideOne === sideThree)){
+    alert('Os seguimentos podem formar um triângulo equilátero');
+    
+}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)||(sideOne === sideTwo != sideThree)||(sideOne !== sideTwo === sideThree)||(sideTwo !== sideOne === sideThree)){
+    alert('Os seguimentos podem formar um triângulo isósceles');
+    
 }
+else {
+    alert('Os seguimentos não podem formar um triângulo');
 
+}
 
 
 
