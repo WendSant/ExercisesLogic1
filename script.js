@@ -302,18 +302,13 @@ let sideOne = parseFloat(prompt('Digite o valor do primeiro seguimento'));
 let sideTwo = parseFloat(prompt('Digite o valor do segundo seguimento'));
 let sideThree = parseFloat(prompt('Digite o valor do terceiro seguimento'));
 
-if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne === sideTwo)&&(sideThree === sideTwo)&&(sideOne === sideThree)){
+if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne == sideTwo && sideTwo == sideThree)){
 alert('Os seguimentos podem formar um triângulo equilátero');
-
-}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne === sideTwo)&&(sideThree === sideTwo)&&(sideOne === sideThree)){
-    alert('Os seguimentos podem formar um triângulo equilátero');
-    
-}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)||(sideOne === sideTwo != sideThree)||(sideOne !== sideTwo === sideThree)||(sideTwo !== sideOne === sideThree)){
-    alert('Os seguimentos podem formar um triângulo isósceles');
-    
+}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne != sideTwo && sideTwo !=  sideThree && sideThree != sideOne)){
+    alert('Os seguimentos podem formar um triângulo escaleno');
 }
 else {
-    alert('Os seguimentos não podem formar um triângulo');
+    alert('Os seguimentos podem formar um triângulo isósceles');
 
 }
 
