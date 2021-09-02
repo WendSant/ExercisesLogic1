@@ -309,7 +309,6 @@ alert('Os seguimentos podem formar um triângulo equilátero');
 }
 else {
     alert('Os seguimentos podem formar um triângulo isósceles');
-
 }
 
 
