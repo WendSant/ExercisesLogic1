@@ -298,18 +298,76 @@
 //  - ISÓSCELES: dois lados iguais
 //  - ESCALENO: todos os lados diferentes
 
-let sideOne = parseFloat(prompt('Digite o valor do primeiro seguimento'));
-let sideTwo = parseFloat(prompt('Digite o valor do segundo seguimento'));
-let sideThree = parseFloat(prompt('Digite o valor do terceiro seguimento'));
+// let sideOne = parseFloat(prompt('Digite o valor do primeiro seguimento'));
+// let sideTwo = parseFloat(prompt('Digite o valor do segundo seguimento'));
+// let sideThree = parseFloat(prompt('Digite o valor do terceiro seguimento'));
 
-if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne == sideTwo && sideTwo == sideThree)){
-alert('Os seguimentos podem formar um triângulo equilátero');
-}else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne != sideTwo && sideTwo !=  sideThree && sideThree != sideOne)){
-    alert('Os seguimentos podem formar um triângulo escaleno');
-}
-else {
-    alert('Os seguimentos podem formar um triângulo isósceles');
-}
+// if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne == sideTwo && sideTwo == sideThree)){
+// alert('Os seguimentos podem formar um triângulo equilátero');
+// }else if((sideOne < sideTwo + sideThree)&&(sideTwo < sideOne + sideThree)&&(sideThree < sideTwo + sideOne)&&(sideOne != sideTwo && sideTwo !=  sideThree && sideThree != sideOne)){
+//     alert('Os seguimentos podem formar um triângulo escaleno');
+// }
+// else {
+//     alert('Os seguimentos podem formar um triângulo isósceles');
+// }
+
+// Exercise thirty one
+// 31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
+
+// alert('Jokenpo contra o computador, boa sorte');
+// let jogadaUsuario = prompt('Digite pedra, papel ou tesoura');
+// let escolhaComputador = ['pedra', 'papel', 'tesoura'];
+// let jogadaComputador = escolhaComputador[Math.floor(Math.random() * escolhaComputador.length) ] ;
+// if (jogadaUsuario > escolhaComputador){
+//     alert('Pedrateste');
+// }else {
+//     alert('teste');
+// }
+// let jogoPPT = function (string,string2){
+//     let pedra = "pedra";
+//     let papel = "papel";
+//     let tesoura = "tesoura";
+//        if(pedra > tesoura){
+//         return "Pedra quebra tesoura";
+//         }else if(tesoura < pedra){
+//             return "Tesoura perde para pedra, pois pedra quebra tesoura";
+//         }else if(pedra < papel){
+//             return "Pedra perde para papel, pois papel cobre a pedra";
+//         }else if(papel > pedra){
+//             return "Papel cobre a pedra";
+//         }else if(tesoura > papel){
+//             return "Tesoura corta papel";
+//         }else if(papel < tesoura){
+//             return "papel perde pois, tesoura corta papel";
+//         }else{
+//             return "opção invalida";
+//         }
+// };
+// jogoPPT(jogadaUsuario,jogadaComputador);
+
+
+
+let userChoice = prompt("1º Escolha, Você escolhe pedra,papel ou tesoura?");
+let userChoice2 = prompt("2º Escolha, Você escolhe pedra,papel ou tesoura?");
+let jogoPPT = function (string, string2){
+    let pedra = "pedra";
+    let papel = "papel";
+    let tesoura = "tesoura";
+        if(userChoice ==="tesoura" && userChoice2=== 'pedra'|| userChoice2 ==="tesoura" && userChoice=== 'pedra'){
+            return "Pedra ganha de tesoura";
+
+
+        }else if(userChoice ==="tesoura" && userChoice2=== 'papel'|| userChoice2 ==="tesoura" && userChoice=== 'papel'){
+            return "Tesoura ganha de papel";
+
+
+        }else if(userChoice ==="papel" && userChoice2=== 'pedra'|| userChoice2 ==="papel" && userChoice=== 'pedra'){
+            return "Papel ganha de pedra";
+        }else{
+            return "opção invalida";
+        }
+};
+alert(jogoPPT(userChoice,userChoice2));
 
 
 
