@@ -318,34 +318,6 @@
 // let jogadaUsuario = prompt('Digite pedra, papel ou tesoura');
 // let escolhaComputador = ['pedra', 'papel', 'tesoura'];
 // let jogadaComputador = escolhaComputador[Math.floor(Math.random() * escolhaComputador.length) ] ;
-// if (jogadaUsuario > escolhaComputador){
-//     alert('Pedrateste');
-// }else {
-//     alert('teste');
-// }
-// let jogoPPT = function (string,string2){
-//     let pedra = "pedra";
-//     let papel = "papel";
-//     let tesoura = "tesoura";
-//        if(pedra > tesoura){
-//         return "Pedra quebra tesoura";
-//         }else if(tesoura < pedra){
-//             return "Tesoura perde para pedra, pois pedra quebra tesoura";
-//         }else if(pedra < papel){
-//             return "Pedra perde para papel, pois papel cobre a pedra";
-//         }else if(papel > pedra){
-//             return "Papel cobre a pedra";
-//         }else if(tesoura > papel){
-//             return "Tesoura corta papel";
-//         }else if(papel < tesoura){
-//             return "papel perde pois, tesoura corta papel";
-//         }else{
-//             return "opção invalida";
-//         }
-// };
-// jogoPPT(jogadaUsuario,jogadaComputador);
-
-
 
 let userChoice = prompt("1º Escolha, Você escolhe pedra,papel ou tesoura?");
 let userChoice2 = prompt("2º Escolha, Você escolhe pedra,papel ou tesoura?");
