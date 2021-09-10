@@ -319,29 +319,47 @@
 // let escolhaComputador = ['pedra', 'papel', 'tesoura'];
 // let jogadaComputador = escolhaComputador[Math.floor(Math.random() * escolhaComputador.length) ] ;
 
-let userChoice = prompt("1º Escolha, Você escolhe pedra,papel ou tesoura?");
-let userChoice2 = prompt("2º Escolha, Você escolhe pedra,papel ou tesoura?");
-let jogoPPT = function (string, string2){
-    let pedra = "pedra";
-    let papel = "papel";
-    let tesoura = "tesoura";
-        if(userChoice ==="tesoura" && userChoice2=== 'pedra'|| userChoice2 ==="tesoura" && userChoice=== 'pedra'){
-            return "Pedra ganha de tesoura";
+// let userChoice = prompt("1º Escolha, Você escolhe pedra,papel ou tesoura?");
+// let userChoice2 = prompt("2º Escolha, Você escolhe pedra,papel ou tesoura?");
+// let jogoPPT = function (string, string2){
+//     let pedra = "pedra";
+//     let papel = "papel";
+//     let tesoura = "tesoura";
+//         if(userChoice ==="tesoura" && userChoice2=== 'pedra'|| userChoice2 ==="tesoura" && userChoice=== 'pedra'){
+//             return "Pedra ganha de tesoura";
 
 
-        }else if(userChoice ==="tesoura" && userChoice2=== 'papel'|| userChoice2 ==="tesoura" && userChoice=== 'papel'){
-            return "Tesoura ganha de papel";
+//         }else if(userChoice ==="tesoura" && userChoice2=== 'papel'|| userChoice2 ==="tesoura" && userChoice=== 'papel'){
+//             return "Tesoura ganha de papel";
 
 
-        }else if(userChoice ==="papel" && userChoice2=== 'pedra'|| userChoice2 ==="papel" && userChoice=== 'pedra'){
-            return "Papel ganha de pedra";
-        }else{
-            return "opção invalida";
-        }
-};
-alert(jogoPPT(userChoice,userChoice2));
+//         }else if(userChoice ==="papel" && userChoice2=== 'pedra'|| userChoice2 ==="papel" && userChoice=== 'pedra'){
+//             return "Papel ganha de pedra";
+//         }else{
+//             return "opção invalida";
+//         }
+// };
+// alert(jogoPPT(userChoice,userChoice2));
+
+// Exercise thirty two
+// 32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o jogador vai tentar descobrir qual foi o valor sorteado.
+alert('Jogo da sorte, tente adivinhar o numero de 1 a 5 aletorio');
+let numPlayer = parseInt(prompt('Digite um valor inteiro entre 1 e 5'));
+let numRandom = getRandomIntInclusive(1, 5);
+if (numRandom === numPlayer) {
+    alert('Parabens você acertou');
+}else {
+    alert('Número errado, tente outra vez')
+    location.reload()
+}
 
 
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 
 
