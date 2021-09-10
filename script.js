@@ -345,7 +345,7 @@
 // 32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o jogador vai tentar descobrir qual foi o valor sorteado.
 alert('Jogo da sorte, tente adivinhar o numero de 1 a 5 aletorio');
 let numPlayer = parseInt(prompt('Digite um valor inteiro entre 1 e 5'));
-let numRandom = getRandomIntInclusive(1, 5);
+let numRandom = parseInt(Math.ceil(Math.random() * 5))
 if (numRandom === numPlayer) {
     alert('Parabens você acertou');
 }else {
@@ -353,13 +353,11 @@ if (numRandom === numPlayer) {
     location.reload()
 }
 
-
-
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+// function getRandomIntInclusive(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+//   }
 
 
 
