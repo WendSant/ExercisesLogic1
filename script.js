@@ -343,15 +343,17 @@
 
 // Exercise thirty two
 // 32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o jogador vai tentar descobrir qual foi o valor sorteado.
-alert('Jogo da sorte, tente adivinhar o numero de 1 a 5 aletorio');
-let numPlayer = parseInt(prompt('Digite um valor inteiro entre 1 e 5'));
-let numRandom = parseInt(Math.ceil(Math.random() * 5))
-if (numRandom === numPlayer) {
-    alert('Parabens você acertou');
-}else {
-    alert('Número errado, tente outra vez')
-    location.reload()
-}
+// alert('Jogo da sorte, tente adivinhar o numero de 1 a 5 aletorio');
+// let numPlayer = parseInt(prompt('Digite um valor inteiro entre 1 e 5'));
+// let numRandom = parseInt(Math.ceil(Math.random() * 5))
+// if (numRandom === numPlayer) {
+//     alert('Parabens você acertou');
+// }else {
+//     alert('Número errado, tente outra vez')
+//     location.reload()
+// }
+
+// Exercise thirty three
 
 
 
